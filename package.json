@@ -11,6 +11,12 @@
     "dependency-check": "dependency-check . test.js abstract/*.js",
     "prepublishOnly": "npm run dependency-check"
   },
+  "files": [
+    "compose.js",
+    "CHANGELOG.md",
+    "CONTRIBUTORS.md",
+    "UPGRADING.md"
+  ],
   "dependencies": {
     "xtend": "~4.0.1"
   },
