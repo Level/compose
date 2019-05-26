@@ -34,7 +34,7 @@ module.exports = function compose () {
         // If db is levelup, it will auto-open and call the callback. If
         // abstract-leveldown, it won't. If abstract-db (a concept), it might.
         if (callback && !isLevelup(db) && db.status === 'new') {
-          db.open(options, function (err) {
+          db.open(xtend(layer.defaults, options), function (err) {
             if (err) return callback(err)
             callback(null, db)
           })
@@ -54,7 +54,8 @@ module.exports = function compose () {
       return shell
     }
 
-    layers.push(function (db, options, callback) {
+    layers.push(function wrapped (db, options, callback) {
+      wrapped.defaults = defaults
       return layer(db, xtend(defaults, options), callback)
     })
 
