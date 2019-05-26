@@ -1,6 +1,6 @@
 {
   "name": "level-compose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Compose a database factory from abstract-leveldown and levelup layers",
   "license": "MIT",
   "main": "compose.js",
