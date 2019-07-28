@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
-    "dependency-check": "^3.3.0",
+    "dependency-check": "^4.0.0",
     "encoding-down": "^6.0.2",
     "hallmark": "^1.0.0",
     "level-community": "^3.0.0",
