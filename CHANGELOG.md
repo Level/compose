@@ -1,7 +1,5 @@
 # Changelog
 
-## [Unreleased][unreleased]
-
 ## [0.0.2] - 2019-05-26
 
 ### Fixed
@@ -11,8 +9,6 @@
 ## [0.0.1] - 2019-05-25
 
 :seedling: Initial release.
-
-[unreleased]: https://github.com/Level/compose/compare/v0.0.2...HEAD
 
 [0.0.2]: https://github.com/Level/compose/compare/v0.0.1...v0.0.2
 
