@@ -17,9 +17,15 @@
 
 - [Usage](#usage)
 - [FAQ](#faq)
+  - [What about `level-packager`?](#what-about-level-packager)
+  - [What is a layer?](#what-is-a-layer)
+  - [Can't I just wrap functions myself?](#cant-i-just-wrap-functions-myself)
+  - [Does this work with `subleveldown`?](#does-this-work-with-subleveldown)
 - [API](#api)
 - [Contributing](#contributing)
 - [Donate](#donate)
+  - [Backers](#backers)
+  - [Sponsors](#sponsors)
 - [License](#license)
 
 </details>
