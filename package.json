@@ -29,7 +29,7 @@
     "levelup": "^4.0.1",
     "nyc": "^15.0.0",
     "standard": "^14.0.0",
-    "tape": "^4.0.0"
+    "tape": "^5.0.1"
   },
   "hallmark": {
     "community": "level-community"
