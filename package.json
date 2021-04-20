@@ -21,7 +21,6 @@
     "xtend": "~4.0.1"
   },
   "devDependencies": {
-    "coveralls": "^3.0.2",
     "dependency-check": "^3.3.0",
     "encoding-down": "^6.0.2",
     "hallmark": "^3.1.0",
