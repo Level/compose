@@ -1,11 +1,11 @@
 'use strict'
 
-var test = require('tape')
-var encode = require('encoding-down')
-var levelup = require('levelup')
-var compose = require('.')
+const test = require('tape')
+const encode = require('encoding-down')
+const levelup = require('levelup')
+const compose = require('.')
 
-var packager = function (down) {
+const packager = function (down) {
   return compose(down, encode, levelup)
 }
 
@@ -49,7 +49,7 @@ test('packager - Level constructor with default options', function (t) {
       open: function (opts, cb) {}
     }
   }
-  var levelup = packager(Down)('location')
+  const levelup = packager(Down)('location')
 
   // In level-packager, this works because encoding-down mutates the shared
   // options object. That level-packager test should be updated.
@@ -79,13 +79,13 @@ test('packager - Level constructor with callback', function (t) {
 
 test('packager - Level constructor with custom options', function (t) {
   t.plan(3)
-  var Down = function (location) {
+  const Down = function (location) {
     t.is(location, 'location', 'location is correct')
     return {
       open: function (opts, cb) {}
     }
   }
-  var levelup = packager(Down)('location', {
+  const levelup = packager(Down)('location', {
     keyEncoding: 'binary',
     valueEncoding: 'binary'
   })

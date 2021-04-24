@@ -1,9 +1,7 @@
 'use strict'
 
-var xtend = require('xtend')
-
 module.exports = function compose () {
-  var layers = []
+  const layers = []
 
   function shell (location, options, callback) {
     if (typeof location === 'function') {
@@ -34,7 +32,7 @@ module.exports = function compose () {
         // If db is levelup, it will auto-open and call the callback. If
         // abstract-leveldown, it won't. If abstract-db (a concept), it might.
         if (callback && !isLevelup(db) && db.status === 'new') {
-          db.open(xtend(layer.defaults, options), function (err) {
+          db.open(Object.assign({}, layer.defaults, options), function (err) {
             if (err) return callback(err)
             callback(null, db)
           })
@@ -47,8 +45,8 @@ module.exports = function compose () {
 
   shell.use = function (layer, defaults) {
     if (Array.isArray(layer)) {
-      for (var i = 0; i < layer.length; i++) {
-        shell.use(layer[i], xtend(isOpts(layer[i + 1]) && layer[++i], defaults))
+      for (let i = 0; i < layer.length; i++) {
+        shell.use(layer[i], Object.assign({}, isOpts(layer[i + 1]) && layer[++i], defaults))
       }
 
       return shell
@@ -56,7 +54,7 @@ module.exports = function compose () {
 
     layers.push(function wrapped (db, options, callback) {
       wrapped.defaults = defaults
-      return layer(db, xtend(defaults, options), callback)
+      return layer(db, Object.assign({}, defaults, options), callback)
     })
 
     decorate(shell, layer)
@@ -75,13 +73,13 @@ function decorate (shell, nut) {
     shell.errors = nut.errors
   }
 
-  ['destroy', 'repair'].forEach(function (m) {
+  for (const m of ['destroy', 'repair']) {
     if (typeof nut[m] === 'function') {
-      shell[m] = function () {
-        nut[m].apply(nut, arguments)
+      shell[m] = function (...args) {
+        nut[m](...args)
       }
     }
-  })
+  }
 }
 
 function isLevelup (db) {
