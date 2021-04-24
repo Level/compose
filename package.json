@@ -31,6 +31,10 @@
     "url": "https://github.com/Level/compose.git"
   },
   "homepage": "https://github.com/Level/compose",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/level"
+  },
   "keywords": [
     "level",
     "database",
