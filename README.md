@@ -192,6 +192,6 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 ## License
 
-[MIT](LICENSE.md) © 2019-present [Contributors](CONTRIBUTORS.md).
+[MIT](LICENSE)
 
 [level-badge]: https://leveljs.org/img/badge.svg
