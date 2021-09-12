@@ -3,12 +3,13 @@
 > Compose a database factory from `abstract-leveldown` and `levelup` layers with predefined defaults per layer.
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
-[![npm](https://img.shields.io/npm/v/level-compose.svg?label=&logo=npm)](https://www.npmjs.com/package/level-compose)
+[![npm](https://img.shields.io/npm/v/level-compose.svg)](https://www.npmjs.com/package/level-compose)
 [![Node version](https://img.shields.io/node/v/level-compose.svg)](https://www.npmjs.com/package/level-compose)
-[![Test](https://github.com/Level/compose/actions/workflows/test.yml/badge.svg)](https://github.com/Level/compose/actions/workflows/test.yml)
-[![Coverage Status](https://codecov.io/gh/Level/compose/branch/master/graph/badge.svg)](https://codecov.io/gh/Level/compose)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Funding](https://opencollective.com/level/tiers/badge.svg?color=red)](#donate)
+[![Test](https://img.shields.io/github/workflow/status/Level/compose/Test?label=test)](https://github.com/Level/compose/actions/workflows/test.yml)
+[![Coverage](https://img.shields.io/codecov/c/github/Level/compose?label=&logo=codecov&logoColor=fff)](https://codecov.io/gh/Level/compose)
+[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)
+[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)
+[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)
 
 ## Table Of Contents
 
@@ -177,15 +178,7 @@ See the [Contribution Guide](https://github.com/Level/community/blob/master/CONT
 
 ## Donate
 
-Support us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work. Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖
-
-**Active financial contributors**
-
-[![Open Collective backers](https://opencollective.com/level/tiers/backer.svg?button=false)](https://opencollective.com/level) [![Open Collective sponsors](https://opencollective.com/level/tiers/sponsor.svg?button=false)](https://opencollective.com/level)
-
-**Past financial contributors**
-
-[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?button=false&avatarHeight=36)](https://opencollective.com/level) [![Open Collective backers](https://opencollective.com/level/backers.svg?button=false&avatarHeight=36)](https://opencollective.com/level)
+Support us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.
 
 ## License
 
