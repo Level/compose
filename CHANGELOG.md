@@ -1,8 +1,8 @@
 # Changelog
 
-_**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md)._
-
 ## [1.0.0] - 2021-04-25
+
+_**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md)._
 
 ### Changed
 
@@ -17,10 +17,10 @@ _**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md)._
 
 ## [0.0.1] - 2019-05-25
 
-:seedling: Initial release.
+_:seedling: Initial release._
 
-[1.0.0]: https://github.com/Level/compose/compare/v0.0.2...v1.0.0
+[1.0.0]: https://github.com/Level/compose/releases/tag/v1.0.0
 
-[0.0.2]: https://github.com/Level/compose/compare/v0.0.1...v0.0.2
+[0.0.2]: https://github.com/Level/compose/releases/tag/v0.0.2
 
-[0.0.1]: https://github.com/Level/compose/compare/v0.0.0...v0.0.1
+[0.0.1]: https://github.com/Level/compose/releases/tag/v0.0.1
